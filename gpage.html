@@ -1,0 +1,21 @@
+<htmlL>
+<body>
+<div id="sigma-container"></div>
+<script src="gephi_server/js/sigma.js"></script>
+<script src="gephi_server/js/sigma/sigma.parsers.gexf.min.js"></script>
+<script>
+  sigma.parsers.gexf(
+    'gephi_server/klinton.gexf',
+    { // Here is the ID of the DOM element that
+      // will contain the graph:
+      container: 'sigma-container'
+    },
+    function(s) {
+      // This function will be executed when the
+      // graph is displayed, with "s" the related
+      // sigma instance.
+    }
+  );
+</script>
+</body>
+</htmlL>
